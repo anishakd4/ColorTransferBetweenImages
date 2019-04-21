@@ -23,7 +23,7 @@ sourceL, sourceA, sourceB = cv2.split(sourceLab)
 destinationL, destinationA, destinationB = cv2.split(destinationLab)
 resultL, resultA, resultB = cv2.split(resultLab)
 
-#subtract the mean of the destination
+#subtract the mean of the destination. This in a way removes the base color of the destination image.
 resultL = destinationL - destinationL.mean()
 resultA = destinationA - destinationA.mean()
 resultB = destinationB - destinationB.mean()

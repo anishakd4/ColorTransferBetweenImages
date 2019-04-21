@@ -60,7 +60,7 @@ int main(){
     stdDev5 = stdDevDestination.val[1];
     stdDev6 = stdDevDestination.val[2];
 
-    //subtract the mean of destination image
+    //subtract the mean of destination image. This in a way removes the base color of the destination image.
     resultChannels[0] = destinationChannels[0] - mean4;
     resultChannels[1] = destinationChannels[1] - mean5;
     resultChannels[2] = destinationChannels[2] - mean6;
